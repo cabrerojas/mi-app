@@ -1,34 +1,16 @@
-import logo from './logo.svg';
-//import './App.css';
-import './main.css'
+import Button from "./Button"
 
-
-const estilo2 = {
-  boxShadow: '0 5px 3px rgba(0,0,0,0.5)'
-}
-
-const estilo = (bg = '#333') =>({
-  backgroundColor: bg,
-  color: '#fff',
-  padding: '10px 15px',
-  margin: '10px 15px'
-})
-
-const Li = ({ children }) => {
-  return (
-    <li className='clase-li'>{children}</li>
-  )
-
-
-}
 const App = () => {
-  const valor = 'asdsafgg'
-  return (
-
-    <ul className="clase-css">
-      <Li estado="feliz">Valor de li</Li>
-    </ul>
-  );
+    return (
+        <div>
+            <h1>
+                Hola mundo
+            </h1>
+            <Button onClick={() => console.log('clickeado')}>
+                Enviar
+            </Button>
+        </div>
+    )
 }
 
-export default App;
+export default App
